@@ -1,0 +1,229 @@
+footer{
+    width:100%;
+    height:244px;
+    position: absolute;
+    left: 0px;
+    top: 1620px;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+} 
+
+.foot{
+    display:flex;
+    margin: 61px inherit;
+    position: relative;
+}
+
+.large_logo{
+    display: flex;
+    width:50%;
+    position: relative;
+    top:20px;
+    left:0;
+}
+
+.YourMeal{
+    right:14px;
+    width:228;
+    height:37px;
+}
+
+.tableware{
+    position: relative;
+    top: -12px;
+    left: 10px;
+    height: 55px;
+}
+
+.phone{
+    position: relative;
+    /* left: 0;
+    right: 10%;
+    top: 10%;
+    bottom: 12.5%; */
+    width:18px;
+    height:18px;
+    top:3px;
+    left:3px;
+}
+
+.left,
+.right{
+    width:50%;
+    display:flex;
+    position: relative;
+    top:60px;
+}
+
+.order_number{
+    width:50%;
+}
+
+.copyright{
+    position:relative;
+    left:-285px;
+    right:50px;
+    top:90px;
+    margin-top:20px;
+}
+
+.order_number > a{
+    text-decoration: none;
+}
+
+.delivery_number{
+    margin-bottom: 25px;
+}
+
+.copy{
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+*{
+    font-family: "Nunito Sans";
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+/* .number_of_orders{
+    text-align: center;
+}
+
+.order > h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    
+}
+
+.order_name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+} */
+
+/* .weight{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.number{
+    text-align: center;
+} */
+
+/* .add,
+.subtract,
+.number{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+} */
+
+/* .submit_order{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+} */
+
+.copy{
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.phone{
+    font-size:16px;
+    line-height:21px;
+}
+
+.delivery_number{
+    font-size: 24px;
+}
+
+
+/* colors */
+
+body,
+.number_of_orders,
+.order_range{
+    background-color:#F2F2F3;
+}
+
+/* ul li, 
+aside,
+.btn, */
+footer{
+    background-color:white;
+}
+
+ul li a:active
+/* .btn:hover,
+.submit_order:hover,
+.btn_main:hover{ */
+{
+    background-color: #FFAB08;
+}
+
+/* ul li a, 
+h2,
+h3, 
+.btn,
+.add,
+.subtract,
+.number,
+.order_number > a{
+    color: black; 
+/* }
+
+.add_order,
+.number{
+    background-color: #F2F2F3;
+}
+
+.add:hover,
+.subtract:hover{
+    background-color: #B1B1B1;
+}
+
+.submit_order,
+.active{
+    background-color:#FF7020;
+} */
+
+
+ /* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:100%;
+} */
+
+
+
+
+
+
+
+

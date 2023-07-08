@@ -1,61 +1,22 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  width:100%;
-}
-
-.container{
-  width: 1140px;
-  margin: 0 auto;
-}
-
-nav{
-  position:absolute;
-  top:506px;
-  left:75px;
-}
-
-.menu,
-.btn,
-nav ul li{
-  display:flex;
-}
-
-.menu{
-  justify-content: space-between;
-}
-
+ul li, 
 .btn{
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 15px;
-  gap: 5px;
-  border-radius: 50px;
-  background: url(icons/free-icon-cheeseburger-2362255.png);
+    background-color:white;
 }
 
-nav ul li{
-  position: relative;
+ul li a:active,
+.btn:hover,
+.btn_main:hover{
+    background-color: #FFAB08;
 }
 
-main {
-  position: absolute;
-  left: 405px;
-  top: 668px;
-  width: 1000px;
-  max-height: 865px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+ul li a, 
+.btn{
+    color: black;
 }
 
-/* typography */
+.active{
+    background-color:#FF7020;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nunito+Sans:wght@300;400;700&display=swap');
 
@@ -130,6 +91,11 @@ ul li a{
 .delivery_number{
     font-size: 24px;
 }
+
+
+
+
+
 
 
 
