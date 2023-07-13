@@ -92,7 +92,14 @@ ul li a{
     font-size: 24px;
 }
 
-
+.btn{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    gap: 5px;
+    border-radius: 50px;
+}
 
 
 

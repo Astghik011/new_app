@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Meal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/aside.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <!--HEADER STYLES-->
+    <link rel="stylesheet" href="./styles/headerStyles.css">
+    <!-- DELIVERY STYLES -->
+    <link rel="stylesheet" href="./styles/deliverystyles.css">
+    <!-- CSS FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+    <header class="header-main">
+        <div class="yellow-elipse"></div>
+    <a href="./#" style="z-index: 1; width: 150px; height: 29px;  margin-top: 30px;"><img src="./images/headerLogosImgs/logo.svg" alt="yourmeal" ></a>
+    <div class="content-container">
+        <img class="burger-img" src="./images/headerLogosImgs/burger.svg" alt="burger">
+        <h2 id="hd-container-text">Только самые <span>сочные бургеры!</span></h2>
+        <p id="head-paragraph">Бесплатная доставка от <span style="font-weight:600 ;">599₽</span></p>
+    </div>
+    
+    </header>
+<!-- delivery window -->
+    <div id="delivery-main">
+        <div class="delivery-container">
+            <div class="delivery-img">
+                <img src="./images/deliveryImgs/bublik.svg" alt="bublik">
+            </div>
+            <div class="delivery-form">
+               <p class="form-head">Доставка</p> 
+               <button onclick="closeDelivery()" class="delivery-close"><img src="./images/deliveryImgs/close.svg" alt="x"></button>
+               <form action="#" class="main-form">
+                    <input type="text"  placeholder="Ваше имя">
+                    <input type="number" placeholder="Телефон">
+                    <br>
+                    <div class="radio">
+                        <input type="radio" id="pickup" name="type-delivery" >
+                        <label for="pickup">Самовывоз </label>
+                        <br>
+                        <input type="radio" id="delivery"  name="type-delivery">
+                        <label for="delivery">Доставка</label>
+                    </div>
+                    <br>
+                    <input type="text" placeholder="Улица, дом, квартира">
+                    <div class="row-input">
+                        <input type="number" placeholder="Этаж">
+                        <input type="number" placeholder="Домофон" >
+                    </div>
+                    <input type="submit" id="form-submit" value="Оформить">
+               </form>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <nav class="container">
+            <ul class="menu">
+                <li class="btn frame1">
+                    <img class="icon" src="icons/free-icon-cheeseburger-2362255.png">                  
+                    <a href="index.html">Бургеры</a>
+                </li>
+                <li class="btn frame2">
+                    <img class="icon" src="icons/free-icon-burrito-2362225.png">
+                    <a href="snacks.html">Закуски</a>
+                </li>
+                <li class="btn frame3">
+                    <img class="icon" src="icons/free-icon-hotdog-sandwich-2362313.png">
+                    <a href="hot-dog.html">Хот-доги</a>
+                </li>
+                <li class="btn frame4">
+                    <img class="icon" src="icons/free-icon-fast-food-2362274.png">
+                    <a href="kombo.html">Комбо</a>
+                </li>
+                <li class="btn frame5">
+                    <img class="icon" src="icons/free-icon-burrito-2362225.png">
+                    <a href="shawarma.html">Шаурма</a>
+                </li>
+                <li class="btn frame6">
+                    <img class="icon" src="icons/free-icon-pizza-2362372.png">
+                    <a href="pizza.html">Пицца</a>
+                </li>
+                <li class="btn frame7">
+                    <img class="icon" src="icons/free-icon-noodles-2362350.png">
+                    <a href="wok.html">Вок</a>
+                </li>
+                <li class="btn frame8 active">
+                    <img class="icon" src="icons/free-icon-doughnut-2362260.png">
+                    <a href="dessert.html">Десерты</a>
+                </li>
+                <li class="btn frame9">
+                    <img class="icon" src="icons/free-icon-ketchup-2362341.png">
+                    <a href="sauce.html">Соусы</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- delivery -->
+    <div class="container main_content">
+    <main>
+        <div class="products_main">
+            <img class="productsImg" src="images/dessert_images/dessert_1.jpg" alt="Burger">
+            <span class="price_main">640₽</span>
+            <p class="productsName">Филадельфия</p>
+            <span class="productsMass">520г</span>
+            <button class="btn_main">Добавить</button>
+        </div>
+        <div class="products_main">
+            <img class="productsImg" src="images/dessert_images/dessert_2.jpg" alt="Burger">
+            <span class="price_main">687₽</span>
+            <p class="productsName">Королевский</p>
+            <span class="productsMass">500г</span>
+            <button class="btn_main">Добавить</button>
+        </div>
+        <div class="products_main">
+            <img class="productsImg" src="images/dessert_images/dessert_3.jpg" alt="Burger">
+            <span class="price_main">590₽</span>
+            <p class="productsName">Гавайский лосось</p>
+            <span class="productsMass">450г</span>
+            <button class="btn_main">Добавить</button>
+        </div>
+        <div class="products_main">
+            <img class="productsImg" src="images/dessert_images/dessert_4.jpg" alt="Burger">
+            <span class="price_main">570₽</span>
+            <p class="productsName">Кубанский</p>
+            <span class="productsMass">480г</span>
+            <button class="btn_main">Добавить</button>
+        </div>
+        <div class="products_main">
+            <img class="productsImg" src="images/dessert_images/dessert_5.jpg" alt="Burger">
+            <span class="price_main">725₽</span>
+            <p class="productsName">Белый дракон</p>
+            <span class="productsMass">510г</span>
+            <button class="btn_main">Добавить</button>
+        </div>
+        <div class="products_main">
+            <img class="productsImg" src="images/dessert_images/dessert_6.jpg" alt="Burger">
+            <span class="price_main">620₽</span>
+            <p class="productsName">Мексиканский</p>
+            <span class="productsMass">520г</span>
+            <button class="btn_main">Добавить</button>
+        </div>
+    </main>
+    <aside>
+        <figure class="order">
+            <h2>Корзина</h2>
+            <span id="number_of_orders">4</span>
+        </figure>
+    <div class="orders">
+        <figure class="order">
+            <img class="thmb thmb1" src="thumbnails/Rectangle1.png">
+            <figcaption class="order_details">
+                <h3 class="order_name">Супер сырный</h3>
+                <p class="weight">512г</p>
+                <p class="price">550₽</p>
+            </figcaption>
+            <div class="add_order">
+                <button class="subtract">-</button><input class="number" value = "0" ><button class="add">+</button>             
+            </div>
+        </figure>
+        <figure class="order">
+            <img class="thmb thmb2" src="thumbnails/Rectangle2.png">
+            <figcaption class="order_details">
+                <h3 class="order_name">Картошка фри</h3>
+                <p class="weight">180г</p>
+                <p class="price">245₽</p>
+            </figcaption>
+            <div class="add_order">
+                <button class="subtract">-</button><input class="number" value = "0" ><button class="add">+</button>
+            </div>
+        </figure>
+        <figure class="order">
+            <img class="thmb thmb3" src="thumbnails/Rectangle3.png">
+            <figcaption class="order_details">
+                <h3 class="order_name">Жгучий хот-дог</h3>
+                <p class="weight">245г</p>
+                <p class="price">239₽</p>
+            </figcaption>
+            <div class="add_order">
+                <button class="subtract">-</button><input type="text" class="number" value = "0" ><button class="add">+</button>        
+            </div>
+        </figure>
+        <div class="order total">
+            <span class="sum_total">Итого</span>
+            <span id="total_price">1235₽</span>
+        </div>
+            <button type="button" id="submit_order">Оформить заказ</button>
+        <div class="free_delivery">
+            <img id="delivery" src="icons/free-icon-delivery-2362252.png"></span>
+            <span>Бесплатная доставка</span>
+        </div>
+    </div>
+    </aside>
+</div>
+    <footer>
+        <div class="container foot">
+            <div class="left">
+                <figure class="large_logo">
+                    <img src="icons/YourMeal.png" class="YourMeal">
+                    <img src="icons/fork.png" class="tableware fork">
+                    <img src="icons/spoon.png" class="tableware spoon">
+                    <img src="icons/knife.png" class="tableware knife">
+                </figure>
+                <div class="copyright">
+                    <p class="copy">© YourMeal, 2022</p>
+                    <p class="copy">Design: Anastasia Ilina</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="order_number">
+                    <p class="delivery_number">Номер для заказа</p>
+                    <img src="icons/Vector.png" class="phone">
+                    <a href="tel:+7(930)833-38-11" class="phone">+7(930)833-38-11</a>
+                </div>
+                <div class="order_number">
+                    <p class="delivery_number">Мы в соцсетях</p>
+                    <a href="https://vk.com/"><img src="icons/vk.png" id="vk" class="media_icon"></a>
+                    <a href="https://web.telegram.org/k/"><img src="icons/telegram.png" id="telegram" class="media_icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
