@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nunito+Sans:wght@300;400;700&display=swap');
+
+.headerMain{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center ;
+    height: 466px;
+    overflow-x:hidden;
+}
+
+.headerLink {
+    z-index: 1; 
+    width: 150px; 
+    height: 29px;  
+    margin-top: 30px;
+}
+
+.yellowEllipse{
+    position: absolute;
+    width: 2880px;
+    height: 2880px;
+    background-color: #FFAB08;
+    border-radius: 50%;
+    margin-top: -2414px;
+}
+
+.contentContainer{
+    position: absolute;
+    display: inline-block;
+    margin-top: 77px;
+    width: 784px;
+    height: 326px;
+    color: #FFFFFF;
+}
+
+.burgerImg{
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 36px;
+}
+
+.hdContainerText{
+    margin-top: 46px;
+    margin-left: 347px;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 437px;
+    height: 120px;
+}
+
+.hdContainerText >span{
+    color: #FF5C00;
+}
+    
+.headerParagraph{
+    margin-left: 347px;
+    margin-top: 52px;
+    color: white;
+}
+
+.headerParagraph > span{
+    font-weight:600;
+}
