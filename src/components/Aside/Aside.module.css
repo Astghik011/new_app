@@ -1,0 +1,114 @@
+aside,
+#number_of_orders,
+h2{
+    position: absolute;
+}
+
+.total,
+#submit_order,
+.subtract,
+.add,
+.number {
+    border:none;
+}
+
+aside{
+    width: 300px;
+    height: 467px;
+    left: 75px;
+    top: 668px;
+    border-radius: 18px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+#number_of_orders{
+    position: absolute;
+    width: 41px;
+    height: 20px;
+    left: 243px;
+    top: 26px;
+    border-radius: 6px;
+}
+
+.order > h2{
+    width: 98px;
+    height: 24px;
+    left: 16px;
+    top: 24px;
+}
+
+.thmb{
+    width: 64px;
+    height: 52px;
+    border-radius: 8px;
+    margin-right:6px;
+}
+
+.order{
+    border-bottom:1px solid lightgrey;
+    padding:16px 0 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    width: 83px;
+    height: 16px;
+    position: relative;
+}
+
+.order_details{
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    left: -15px;
+}
+
+.add_order{
+    width: 84px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.number, 
+.add,
+.subtract{
+    width:20px;
+    height: 22px;
+    border-radius: 5px;
+}
+
+.total_price,
+.sum_total{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+#submit_order{
+    width: 268px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.free_delivery{
+    display: flex;
+    justify-content: flex-start;
+    margin-top:16px;
+}
+
+#delivery{
+    margin-right:10px;
+}
+
+button{
+    cursor: pointer;
+}
+
+
