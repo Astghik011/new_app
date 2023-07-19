@@ -1,25 +1,45 @@
 import styles from './Aside.module.css'
+import thmb1 from '../../thumbnails/Rectangle1.png'
+import {useState} from 'react'
+import data from '../../data.json'
+
+
+
+const {burger1} = data[0]
 
 function Aside(){
+
+    const [numberOfItems, setNumberOfItems] = useState(0)
+
+    function addByOne(){
+        setNumberOfItems(numberOfItems+1)
+    }
+
+    function subtractByOne(){
+        setNumberOfItems(numberOfItems-1)
+    }
+
     return <div>
         <aside>
-            <figure className="order">
+            <figure className={styles.order}>
                 <h2>Корзина</h2>
-                <span id="number_of_orders">4</span>
+                <span className ={styles.numberOfOrders}>{numberOfItems}</span>
             </figure>
-        <div class="orders">
-            <figure class="order">
-                <img class="thmb thmb1" src="thumbnails/Rectangle1.png" />
-                <figcaption class="order_details">
-                    <h3 class="order_name">Супер сырный</h3>
-                    <p class="weight">512г</p>
-                    <p class="price">550₽</p>
+        <div className={styles.orders}>
+            <figure className={styles.order}>
+                <img className={`${styles.thmb} ${styles.thmb1}`} src={thmb1} />
+                <figcaption className={styles.orderDetails}>
+                    <h3 className={styles.orderName}>{burger1.name}</h3>
+                    <p className={styles.weight}>{burger1.price}г</p>
+                    <p className={styles.price}>{burger1.weight}₽</p>
                 </figcaption>
-                <div class="add_order">
-                    <button class="subtract">-</button><input class="number" value = "0" /><button class="add">+</button>             
+                <div className={styles.addOrder}>
+                    <button className={styles.subtract} onClick ={subtractByOne}>-</button>
+                    <input className={styles.number} value = {numberOfItems} />
+                    <button className={styles.add} onClick={addByOne}>+</button>             
                 </div>
             </figure>
-            <figure class="order">
+            {/* <figure class="order">
                 <img class="thmb thmb2" src="thumbnails/Rectangle2.png" />
                 <figcaption class="order_details">
                     <h3 class="order_name">Картошка фри</h3>
@@ -49,7 +69,7 @@ function Aside(){
             <div class="free_delivery">
                 <img id="delivery" src="icons/free-icon-delivery-2362252.png" />
                 <span>Бесплатная доставка</span>
-            </div>
+            </div> */}
         </div>
         </aside>
     </div>
