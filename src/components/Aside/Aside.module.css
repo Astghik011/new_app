@@ -1,15 +1,20 @@
 aside,
-#number_of_orders,
+.numberOfOrders,
 h2{
     position: absolute;
 }
 
 .total,
-#submit_order,
+.submitOrder,
 .subtract,
 .add,
 .number {
     border:none;
+}
+
+.subtract:hover,
+.add:hover{
+    background-color: rgb(168, 168, 168);
 }
 
 aside{
@@ -24,7 +29,7 @@ aside{
     align-items: space-between;
 }
 
-#number_of_orders{
+.numberOfOrders{
     position: absolute;
     width: 41px;
     height: 20px;
@@ -60,14 +65,14 @@ h3{
     position: relative;
 }
 
-.order_details{
+.orderDetails{
     display:flex;
     flex-direction: column;
     position:relative;
     left: -15px;
 }
 
-.add_order{
+.addOrder{
     width: 84px;
     height: 40px;
     border-radius: 12px;
@@ -82,28 +87,29 @@ h3{
     width:20px;
     height: 22px;
     border-radius: 5px;
+    text-align: center;
 }
 
-.total_price,
-.sum_total{
+.totalPrice,
+.sumTotal{
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
 }
 
-#submit_order{
+.submitOrder{
     width: 268px;
     height: 40px;
     border-radius: 12px;
 }
 
-.free_delivery{
+.freeDelivery{
     display: flex;
     justify-content: flex-start;
     margin-top:16px;
 }
 
-#delivery{
+.delivery{
     margin-right:10px;
 }
 

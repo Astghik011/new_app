@@ -1,0 +1,22 @@
+[
+  {
+    "burger1": {
+        "url": "../../images/burger_images/burger_1.jpg",
+        "name": "Филадельфия",
+        "price": "640",
+        "weight": "520"
+    },
+    "burger2": {
+        "url": "../../images/burger_images/burger_2.jpg",
+        "name": "Картошка фри",
+        "price": "180",
+        "weight": "245"
+    },
+    "burger3": {
+        "url": "../../images/burger_images/burger_3.jpg",
+        "name": "Жгучий хот-дог",
+        "price": "245",
+        "weight": "239"
+    }
+  }
+]

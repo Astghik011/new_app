@@ -5,16 +5,15 @@ import burger3 from '../../images/burger_images/burger_3.jpg'
 import burger4 from '../../images/burger_images/burger_4.jpg'
 import burger5 from '../../images/burger_images/burger_5.jpg'
 import burger6 from '../../images/burger_images/burger_6.jpg'
+import React, {useState} from 'react'
 
 
 function MainContent(){
-    // let response = fetch('https://jsonplaceholder.typicode.com/posts')
-    //     .then((response) => response.json())
-    //     .then((data) => console.log(data))
-    // let titles = response.map((data) => data.title)
-    // return (<div>
-    //     {titles}
-    // </div>)
+
+    const [description, setDescription] = useState("");
+
+    const handleClick = (()=> setDescription())
+
     return (
         <div className={`${styles.container} ${styles.main_content}`}>
         <main>
@@ -23,7 +22,7 @@ function MainContent(){
                 <span className={styles.price_main}>640₽</span>
                 <p className={styles.productsName}>Филадельфия</p>
                 <span className={styles.productsMass}>520г</span>
-                <button className={styles.btn_main}>Добавить</button>
+                <button className={styles.btn_main} onClick={handleClick}>Добавить</button>
             </div>
             <div className={styles.products_main}>
                 <img className={styles.productsImg} src={burger2} alt="Burger" />
