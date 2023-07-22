@@ -5,62 +5,43 @@ import burger3 from '../../images/burger_images/burger_3.jpg'
 import burger4 from '../../images/burger_images/burger_4.jpg'
 import burger5 from '../../images/burger_images/burger_5.jpg'
 import burger6 from '../../images/burger_images/burger_6.jpg'
-import React, {useState} from 'react'
+import React from 'react'
+import burgers from '../../data.json'
+console.log(burgers)
 
 
-function MainContent(){
-
-    const [description, setDescription] = useState("");
-
-    const handleClick = (()=> setDescription())
-
+const handleClick = () => {
+    console.log('Read description');
+  };
+  
+  const BurgerData = () => {
+    return burgers.map((burger, index) => (
+        <div className={styles.products_main}>
+            <img className={styles.productsImg} src={burger} alt="Burger" />
+            <span className={styles.price_main}>{burger.price}₽</span>
+            <p className={styles.productsName}>{burger.name}</p>
+            <span className={styles.productsMass}>{burger.weight}г</span>
+            <button className={styles.btn_main} onClick={handleClick}>
+              Добавить
+            </button>
+          </div>
+    ));
+  };
+  
+  function MainContent() {
     return (
-        <div className={`${styles.container} ${styles.main_content}`}>
+      <div className={`${styles.container} ${styles.mainContent}`}>
         <main>
-            <div className={styles.products_main}>
-                <img className={styles.productsImg} src={burger1} alt="Burger" />
-                <span className={styles.price_main}>640₽</span>
-                <p className={styles.productsName}>Филадельфия</p>
-                <span className={styles.productsMass}>520г</span>
-                <button className={styles.btn_main} onClick={handleClick}>Добавить</button>
-            </div>
-            <div className={styles.products_main}>
-                <img className={styles.productsImg} src={burger2} alt="Burger" />
-                <span className={styles.price_main}>687₽</span>
-                <p className={styles.productsName}>Королевский</p>
-                <span className={styles.productsMass}>500г</span>
-                <button className={styles.btn_main}>Добавить</button>
-            </div>
-            <div className={styles.products_main}>
-                <img className={styles.productsImg} src={burger3} alt="Burger" />
-                <span className={styles.price_main}>590₽</span>
-                <p className={styles.productsName}>Гавайский лосось</p>
-                <span className={styles.productsMass}>450г</span>
-                <button className={styles.btn_main}>Добавить</button>
-            </div>
-            <div className={styles.products_main}>
-                <img className={styles.productsImg} src={burger4} alt="Burger" />
-                <span className={styles.price_main}>570₽</span>
-                <p className={styles.productsName}>Кубанский</p>
-                <span className={styles.productsMass}>480г</span>
-                <button className={styles.btn_main}>Добавить</button>
-            </div>
-            <div className={styles.products_main}>
-                <img className={styles.productsImg} src={burger5} alt="Burger" />
-                <span className={styles.price_main}>725₽</span>
-                <p className={styles.productsName}>Белый дракон</p>
-                <span className={styles.productsMass}>510г</span>
-                <button className={styles.btn_main}>Добавить</button>
-            </div>
-            <div className={styles.products_main}>
-                <img className={styles.productsImg} src={burger6} alt="Burger" />
-                <span className={styles.price_main}>620₽</span>
-                <p className={styles.productsName}>Мексиканский</p>
-                <span className={styles.productsMass}>520г</span>
-                <button className={styles.btn_main}>Добавить</button>
-            </div>
-        </main>
-    </div>)
-}
+          <BurgerData/>
 
-export default MainContent
+        </main>
+      </div>
+    );
+  }
+  
+  export default MainContent;
+ 
+  
+  
+  
+  
