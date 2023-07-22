@@ -1,13 +1,56 @@
 import styles from './Aside.module.css'
 import thmb1 from '../../thumbnails/Rectangle1.png'
-import {useState} from 'react'
+import { useCallback, useReducer } from 'react'
 import data from '../../data.json'
 
 
 
-const {burger1} = data[0]
+const { burger1 } = data[0]
+
+// useReducer, useCallback
+
+const reducer = ((state, action) => {
+    if(action.type === "add") return {value: state.value + 1}
+    if(action.type === "subtract") return {value: state.value - 1}
+    // return state
+})
 
 function Aside(){
+    const initialState = {value: 0}
+    const [state, dispatch] = useReducer(reducer, initialState)
+
+    const handleSubtract = useCallback(()=>{
+        dispatch({type:"subtract"})
+    }, [])
+
+    const handleAdd = useCallback(()=>{
+        dispatch({type:"add"})
+    }, [])
+
+    return <div>
+        <aside>
+            <figure className={styles.order}>
+                <h2>Корзина</h2>
+                <span className ={styles.numberOfOrders}>{state.value}</span>
+            </figure>
+        <div className={styles.orders}>
+            <figure className={styles.order}>
+                <img className={`${styles.thmb} ${styles.thmb1}`} src={thmb1} alt={`${burger1}`}/>
+                <figcaption className={styles.orderDetails}>
+                    <h3 className={styles.orderName}>{burger1.name}</h3>
+                    <p className={styles.weight}>{burger1.price}г</p>
+                    <p className={styles.price}>{burger1.weight}₽</p>
+                </figcaption>
+                <div className={styles.addOrder}>
+                    <button className={styles.subtract} onClick ={handleSubtract}>-</button>
+                    <input className={styles.number} value = {state.value} />
+                    <button className={styles.add} onClick={handleAdd}>+</button>             
+                </div>
+            </figure>
+
+{/* useState */}
+
+{/* function Aside(){
 
     const [numberOfItems, setNumberOfItems] = useState(0)
 
@@ -38,7 +81,7 @@ function Aside(){
                     <input className={styles.number} value = {numberOfItems} />
                     <button className={styles.add} onClick={addByOne}>+</button>             
                 </div>
-            </figure>
+            </figure> */}
             {/* <figure class="order">
                 <img class="thmb thmb2" src="thumbnails/Rectangle2.png" />
                 <figcaption class="order_details">

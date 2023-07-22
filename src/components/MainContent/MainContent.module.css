@@ -55,7 +55,7 @@ main {
   align-items: center;
 }
 
-.products_main{
+.productsMain{
   width: 280px;
   height: 405px;
   top: 12px;
@@ -70,7 +70,7 @@ main {
   margin: 10px;
   border-radius: 12px;
 }
-.price_main{
+.priceMain{
   width: 58px;
   height: 24px;
   margin-left: 20px;
@@ -94,7 +94,7 @@ main {
   font-size: 16px;
   color: #b1b1b1;
 }
-.btn_main{
+.btnMain{
   align-items: center;
   width: 260px;
   height: 40px;

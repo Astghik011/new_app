@@ -1,22 +1,44 @@
 [
   {
-    "burger1": {
-        "url": "../../images/burger_images/burger_1.jpg",
-        "name": "Филадельфия",
-        "price": "640",
-        "weight": "520"
-    },
-    "burger2": {
-        "url": "../../images/burger_images/burger_2.jpg",
-        "name": "Картошка фри",
-        "price": "180",
-        "weight": "245"
-    },
-    "burger3": {
-        "url": "../../images/burger_images/burger_3.jpg",
-        "name": "Жгучий хот-дог",
-        "price": "245",
-        "weight": "239"
-    }
+    "id": "1", 
+    "url": "../../images/burger_images/burger_1.jpg",
+    "name": "Филадельфия",
+    "price": "640",
+    "weight": "520"
+  },
+  { 
+    "id": "2",
+    "url": "../../images/burger_images/burger_2.jpg",
+    "name": "Картошка фри",
+    "price": "180",
+    "weight": "245"
+  },
+  {
+    "id": "3",
+    "url": "../../images/burger_images/burger_3.jpg",
+    "name": "Жгучий хот-дог",
+    "price": "245",
+    "weight": "239"
+  },
+  {
+    "id": "4",
+    "url": "../../images/burger_images/burger_4.jpg",
+    "name": "Королевский",
+    "price": "687",
+    "weight": "500"
+  },
+  {
+    "id": "5",
+    "url": "../../images/burger_images/burger_5.jpg",
+    "name": "Гавайский лосось",
+    "price": "590",
+    "weight": "450"
+  },
+  {
+    "id": "6",
+    "url": "../../images/burger_images/burger_6.jpg",
+    "name": "Кубанский",
+    "price": "570",
+    "weight": "480"
   }
 ]
