@@ -8,13 +8,6 @@ import burger6 from '../../images/burger_images/burger_6.jpg'
 
 
 function MainContent(){
-    // let response = fetch('https://jsonplaceholder.typicode.com/posts')
-    //     .then((response) => response.json())
-    //     .then((data) => console.log(data))
-    // let titles = response.map((data) => data.title)
-    // return (<div>
-    //     {titles}
-    // </div>)
     return (
         <div className={`${styles.container} ${styles.main_content}`}>
         <main>
