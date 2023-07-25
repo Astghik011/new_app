@@ -4,7 +4,16 @@ import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Aside from './components/Aside/Aside'
 import './App.css'
-import { Router, Switch, Route } from 'react-router-dom'
+import { Router, Routes, Route } from 'react-router-dom'
+import Dessert from '../src/components/Routes/Dessert'
+import HotDog from '../src/components/Routes/HotDog'
+import Kombo from '../src/components/Routes/Kombo'
+import Pizza from '../src/components/Routes/Pizza'
+import Sauce from '../src/components/Routes/Sauce'
+import Shawarma from '../src/components/Routes/Shawarma'
+import Snacks from '../src/components/Routes/Snacks'
+import Wok from '../src/components/Routes/Wok'
+import Index from '../src/components/Routes/Index'
 
 function App(){
     return (
@@ -15,7 +24,8 @@ function App(){
           <Aside />
           <MainContent />
           <Footer />
-          <Switch>
+          
+          <Routes>
             <Route path="/">
               <Index />
             </Route>
@@ -43,7 +53,7 @@ function App(){
             <Route path="/wok">
               <Wok />
             </Route>
-          </Switch>
+          </Routes>
         </div>
       </Router>
   )
