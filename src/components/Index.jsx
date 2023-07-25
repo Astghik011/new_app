@@ -1,10 +1,10 @@
-import burger1 from '../../images/burger_images/burger_1.jpg'
-import burger2 from '../../images/burger_images/burger_2.jpg'
-import burger3 from '../../images/burger_images/burger_3.jpg'
-import burger4 from '../../images/burger_images/burger_4.jpg'
-import burger5 from '../../images/burger_images/burger_5.jpg'
-import burger6 from '../../images/burger_images/burger_6.jpg'
-import styles from '../../components/MainContent/MainContent.module.css'
+import burger1 from '../images/burger_images/burger_1.jpg'
+import burger2 from '../images/burger_images/burger_2.jpg'
+import burger3 from '../images/burger_images/burger_3.jpg'
+import burger4 from '../images/burger_images/burger_4.jpg'
+import burger5 from '../images/burger_images/burger_5.jpg'
+import burger6 from '../images/burger_images/burger_6.jpg'
+import styles from '../components/MainContent/MainContent.module.css'
 
 function Index(){
     return(

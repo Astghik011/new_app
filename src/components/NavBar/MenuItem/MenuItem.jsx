@@ -17,35 +17,35 @@ function MenuItem(){
         </li>
         <li className={`${styles.btn} ${styles.frame2}`}>
             <img className="icon" src={burrito} alt="burrito"/>
-            <Link to="/snacks">Закуски</Link>
+            <Link to="Snacks">Закуски</Link>
         </li>
         <li className={`${styles.btn} ${styles.frame3}`}>
             <img className="icon" src={hotdog} alt="hotdog" />
-            <Link to="/hot-dog">Хот-доги</Link>
+            <Link to="HotDog">Хот-доги</Link>
         </li>
         <li className={`${styles.btn} ${styles.frame4}`}>
             <img className="icon" src={combo} alt="combo" />
-            <Link to="/kombo">Комбо</Link>
+            <Link to="Kombo">Комбо</Link>
         </li>
         <li className={`${styles.btn} ${styles.frame5}`}>
             <img className="icon" src={burrito} alt="burrito"  />
-            <Link to="/shawarma">Шаурма</Link>
+            <Link to="Shawarma">Шаурма</Link>
         </li>
         <li className={`${styles.btn} ${styles.frame6}`}>
             <img className="icon" src={pizza} alt="pizza" />
-            <Link to="/pizza">Пицца</Link>
+            <Link to="Pizza">Пицца</Link>
         </li>
         <li className={`${styles.btn} ${styles.frame7}`}>
             <img className="icon" src={noodles} alt="noodles" />
-            <Link to="/wok">Вок</Link>
+            <Link to="Wok">Вок</Link>
         </li>
         <li className={`${styles.btn} ${styles.frame8}`}>
             <img className="icon" src={doughnut} alt="doughnut" />
-            <Link to="/dessert">Десерты</Link>
+            <Link to="Dessert">Десерты</Link>
         </li>
         <li className={`${styles.btn} ${styles.frame9}`}>
             <img className="icon" src={ketchup} alt="ketchup"  />
-            <Link to="/sauce">Соусы</Link>
+            <Link to="Sauce">Соусы</Link>
         </li>
     </>
 }

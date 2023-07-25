@@ -1,9 +1,9 @@
 import styles from './MainContent.module.css'
-import Index from '../Routes/Index'
+import Index from '../Index'
 
 function MainContent(){
     return (
-        <div className={`${styles.container} ${styles.main_content}`}>
+        <div className={`${styles.container} ${styles.mainContent}`}>
         <Index />
     </div>)
 }
