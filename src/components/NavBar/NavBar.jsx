@@ -1,6 +1,6 @@
 import MenuItem from './MenuItem/MenuItem'
 import styles from './NavBar.module.css'
-import {Router, Routes, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Index from '../Index'
 import Sauce from '../Sauce'
 import Pizza from '../Pizza'
@@ -24,12 +24,12 @@ function NavBar(props){
             <Route exact path="Snacks" element={<Snacks />} />
             <Route exact path="Wok" element={<Wok />} />
             <Route exact path="Shawarma" element={<Shawarma />} />
+        </Routes>
             <nav className={styles.container}>
                 <ul className={styles.menu}>
                     <MenuItem src={props.src}/>
                 </ul>
             </nav>
-        </Routes>
       </Router>
     </>
 }
