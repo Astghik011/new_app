@@ -1,47 +1,55 @@
+import styles from '../components/MainContent/MainContent.module.css'
+import shawarma1 from '../images/shawarma_images/shawarma_1.jpg'
+import shawarma2 from '../images/shawarma_images/shawarma_2.jpg'
+import shawarma3 from '../images/shawarma_images/shawarma_3.jpg'
+import shawarma4 from '../images/shawarma_images/shawarma_4.jpg'
+import shawarma5 from '../images/shawarma_images/shawarma_5.jpg'
+import shawarma6 from '../images/shawarma_images/shawarma_6.jpg'
+
 function Shawarma(){
-    return(
+    return (
         <main>
-        <div class="products_main">
-            <img class="productsImg" src="images/dessert_images/dessert_1.jpg" alt="Burger" />
-            <span class="price_main">640₽</span>
-            <p class="productsName">Филадельфия</p>
-            <span class="productsMass">520г</span>
-            <button class="btn_main">Добавить</button>
+        <div className={styles.productsMain}>
+            <img className={styles.productsImg} src={shawarma1} alt="shawarma" />
+            <span className={styles.priceMain}>640₽</span>
+            <p className={styles.productsName}>Филадельфия</p>
+            <span className={styles.productsMass}>520г</span>
+            <button className={styles.btnMain}>Добавить</button>
         </div>
-        <div class="products_main">
-            <img class="productsImg" src="images/dessert_images/dessert_2.jpg" alt="Burger" />
-            <span class="price_main">687₽</span>
-            <p class="productsName">Королевский</p>
-            <span class="productsMass">500г</span>
-            <button class="btn_main">Добавить</button>
+        <div className={styles.productsMain}>
+            <img className={styles.productsImg} src={shawarma2} alt="shawarma" />
+            <span className={styles.priceMain}>687₽</span>
+            <p className={styles.productsName}>Королевский</p>
+            <span className={styles.productsMass}>500г</span>
+            <button className={styles.btnMain}>Добавить</button>
         </div>
-        <div class="products_main">
-            <img class="productsImg" src="images/dessert_images/dessert_3.jpg" alt="Burger" />
-            <span class="price_main">590₽</span>
-            <p class="productsName">Гавайский лосось</p>
-            <span class="productsMass">450г</span>
-            <button class="btn_main">Добавить</button>
+        <div className={styles.productsMain}>
+            <img className={styles.productsImg} src={shawarma3} alt="shawarma" />
+            <span className={styles.priceMain}>590₽</span>
+            <p className={styles.productsName}>Гавайский лосось</p>
+            <span className={styles.productsMass}>450г</span>
+            <button className={styles.btnMain}>Добавить</button>
         </div>
-        <div class="products_main">
-            <img class="productsImg" src="images/dessert_images/dessert_4.jpg" alt="Burger" />
-            <span class="price_main">570₽</span>
-            <p class="productsName">Кубанский</p>
-            <span class="productsMass">480г</span>
-            <button class="btn_main">Добавить</button>
+        <div className={styles.productsMain}>
+            <img className={styles.productsImg} src={shawarma4} alt="shawarma" />
+            <span className={styles.priceMain}>570₽</span>
+            <p className={styles.productsName}>Кубанский</p>
+            <span className={styles.productsMass}>480г</span>
+            <button className={styles.btnMain}>Добавить</button>
         </div>
-        <div class="products_main">
-            <img class="productsImg" src="images/dessert_images/dessert_5.jpg" alt="Burger" />
-            <span class="price_main">725₽</span>
-            <p class="productsName">Белый дракон</p>
-            <span class="productsMass">510г</span>
-            <button class="btn_main">Добавить</button>
+        <div className={styles.productsMain}>
+            <img className={styles.productsImg} src={shawarma5} alt="shawarma" />
+            <span className={styles.priceMain}>725₽</span>
+            <p className={styles.productsName}>Белый дракон</p>
+            <span className={styles.productsMass}>510г</span>
+            <button className={styles.btnMain}>Добавить</button>
         </div>
-        <div class="products_main">
-            <img class="productsImg" src="images/dessert_images/dessert_6.jpg" alt="Burger" />
-            <span class="price_main">620₽</span>
-            <p class="productsName">Мексиканский</p>
-            <span class="productsMass">520г</span>
-            <button class="btn_main">Добавить</button>
+        <div className={styles.productsMain}>
+            <img className={styles.productsImg} src={shawarma6} alt="shawarma" />
+            <span className={styles.priceMain}>620₽</span>
+            <p className={styles.productsName}>Мексиканский</p>
+            <span className={styles.productsMass}>520г</span>
+            <button className={styles.btnMain}>Добавить</button>
         </div>
         </main>
     )
