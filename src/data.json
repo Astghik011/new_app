@@ -1,0 +1,124 @@
+{
+    "burger":[
+        {
+            "url": "/burger_1.jpg",
+            "name": "burger1",
+            "price": "100"
+        },
+        {   
+            "url": "/burger_2.jpg",
+            "name": "burger2",
+            "price": "200"
+        }
+    ],
+    "dessert":[
+        {   
+            "url": "/dessert_1.jpg",
+            "name": "dessert1",
+            "price": "100",
+            "weight": "50"
+        },
+        {   
+            "url": "/dessert_2.jpg",
+            "name": "dessert2",
+            "price": "200",
+            "weight": "70"
+        },
+        {   
+            "url": "/dessert_3.jpg",
+            "name": "dessert3",
+            "price": "100",
+            "weight": "50"
+        },
+        {   
+            "url": "/dessert_4.jpg",
+            "name": "dessert4",
+            "price": "200",
+            "weight": "70"
+        },
+        {   
+            "url": "/dessert_5.jpg",
+            "name": "dessert5",
+            "price": "100",
+            "weight": "50"
+        },
+        {   
+            "url": "/dessert_6.jpg",
+            "name": "dessert6",
+            "price": "200",
+            "weight": "70"
+        }
+    ],
+    "pizza":[
+        {   
+            "url": "/pizza_1",
+            "name": "pizza1",
+            "price": "100"
+        },
+        {   
+            "url": "/pizza_2",
+            "name": "pizza2",
+            "price": "200"
+        }
+    ],
+    "hotDog":[
+        {
+            "name": "hot-dog1",
+            "price": "100"
+        },
+        {
+            "name": "hot-dog2",
+            "price": "200"
+        } 
+    ],
+    "kombo":[
+        {
+            "name": "kombo1",
+            "price": "100"
+        },
+        {
+            "name": "kombo2",
+            "price": "200"
+        }
+    ],
+    "shawarma":[
+        {
+            "name": "shawarma1",
+            "price": "100"
+        },
+        {
+            "name": "shawarma2",
+            "price": "200"
+        } 
+    ],
+    "snack":[
+        {
+            "name": "snack1",
+            "price": "100"
+        },
+        {
+            "name": "snack2",
+            "price": "200"
+        }
+    ],
+    "wok":[
+        {
+            "name": "wok1",
+            "price": "100"
+        },
+        {
+            "name": "wok2",
+            "price": "200"
+        } 
+    ],
+    "sauce":[
+        {
+            "name": "sauce1",
+            "price": "100"
+        },
+        {
+            "name": "sauce2",
+            "price": "200"
+        } 
+    ]
+}

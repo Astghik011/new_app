@@ -1,8 +1,10 @@
 import styles from './Aside.module.css'
+import data from '../../data.json' 
 
 function Aside(){
-    return <div>
-        <aside>
+    return (
+        <div>
+         <aside>
             <figure className="order">
                 <h2>Корзина</h2>
                 <span id="number_of_orders">4</span>
@@ -51,8 +53,8 @@ function Aside(){
                 <span>Бесплатная доставка</span>
             </div>
         </div>
-        </aside>
-    </div>
+        </aside> 
+    </div>)
 }
 
 export default Aside
